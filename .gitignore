@@ -53,7 +53,9 @@ Thumbs.db
 # Composer #
 #######################
 vendor
+node_modules
 !assets/js/vendor/
 wpcs/
 composer.lock
+package-lock.json
 
