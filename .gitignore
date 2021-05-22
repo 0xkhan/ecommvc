@@ -50,7 +50,7 @@ Thumbs.db
 **/.sass-cache/*
 **/.map
 
-# Composer #
+# Composer and NPM #
 #######################
 vendor
 node_modules
@@ -58,4 +58,4 @@ node_modules
 wpcs/
 composer.lock
 package-lock.json
-
+public/mix-manifest.json
