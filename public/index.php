@@ -48,15 +48,35 @@ require_once __DIR__ . '/../bootstrap/init.php';
         <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
 
     </head>
-    <body>
+    <body data-page-id="global"><!--@yield('data-page-id')-->
         <header id="header">
             <nav class="navbar">
                 <div class="logo">ecommvc</div>
                 <ul id="nav-list" class="nav-list">
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Products</li>
-                    <li>Contact Us</li>
+                    <li class="dropdown nav-item">Home</li>
+                    <li class="dropdown nav-item">About Us</li>
+                    <li class="dropdown nav-item">
+                        <span class="nav-link-inner-text">Products</span>
+                        <div class="dropdown-menu" tabindex="-1" role="menu">
+                            <a class="dropdown-item" role="menuitem" href="/">
+                                <i class="fa fa-user text-info"></i>
+                                User
+                            </a>
+                            <a class="dropdown-item" role="menuitem" href="/">
+                                <i class="fa fa-clock text-danger"></i>
+                                Clock
+                            </a>
+                            <a class="dropdown-item" role="menuitem" href="/">
+                                <i class="fa fa-comment text-primary"></i>
+                                Testimonials
+                            </a>
+                            <a class="dropdown-item" role="menuitem" href="/">
+                                <i class="fa fa-tshirt text-purple"></i>
+                                T-Shirt
+                            </a>
+                        </div>
+                    </li>
+                    <li class="dropdown nav-item">Contact Us</li>
                 </ul>
                 <div class="nav-btn">
                     <ul id="nav-btn-list" class="nav-list">
@@ -71,6 +91,13 @@ require_once __DIR__ . '/../bootstrap/init.php';
                 </div>
             </nav>
         </header>
+        <main>
+            <section id="feature">
+                <div class="container">
+
+                </div>
+            </section>
+        </main>
 
     <script src="../js/main.js"></script>
     </body>

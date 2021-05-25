@@ -1,5 +1,2 @@
-@import 'partials/_variables';
-
-@import 'partials/_general';
-
-@import 'partials/_header';
+@use 'components/general';
+@use 'components/header';

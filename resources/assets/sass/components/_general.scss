@@ -1,0 +1,50 @@
+@use '../abstracts' as abs;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: abs.$gray-dark;
+    background-color: abs.$neutral;
+    font-family: abs.$font-family-sans-serif;
+}
+
+section {
+    margin: 30px 0;
+}
+
+.container {
+    max-width: abs.$max-page-width;
+    margin: 0 auto;
+}
+
+.contained {
+    max-width: abs.$contained;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    max-width: 100%;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(abs.$grid-columns, 1fr);
+    grid-gap: abs.$grid-gutter;
+}
+
+.text-info { color: abs.$info; }
+.text-danger { color: abs.$danger; }
+.text-success { color: abs.$success; }
+.text-purple { color: abs.$purple; }
+.text-warning { color: abs.$warning; }
+.text-primary { color: abs.$primary; }
+.text-secondary { color: abs.$secondary; }
+.text-blue { color: abs.$blue; }
+.text-indigo { color: abs.$indigo; }

@@ -5,15 +5,82 @@
 /*!************************************!*\
   !*** ./resources/assets/js/app.js ***!
   \************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+// Custon Js Files
+__webpack_require__(/*! ../../assets/js/ecommvc */ "./resources/assets/js/ecommvc.js");
+
+__webpack_require__(/*! ../../assets/js/front/navbar */ "./resources/assets/js/front/navbar.js");
+
+__webpack_require__(/*! ../../assets/js/init */ "./resources/assets/js/init.js");
+
+/***/ }),
+
+/***/ "./resources/assets/js/ecommvc.js":
+/*!****************************************!*\
+  !*** ./resources/assets/js/ecommvc.js ***!
+  \****************************************/
 /***/ (() => {
 
 (function () {
-  var toggleBtn = document.getElementById('menu-btn');
-  var navList = document.getElementById('nav-list');
-  var navBtnList = document.getElementById('nav-btn-list');
-  toggleBtn.addEventListener('click', function () {
-    navList.classList.toggle('active');
-    navBtnList.classList.toggle('active');
+  'use strict';
+
+  window.ecommvc = {
+    global: {}
+  };
+})();
+
+/***/ }),
+
+/***/ "./resources/assets/js/front/navbar.js":
+/*!*********************************************!*\
+  !*** ./resources/assets/js/front/navbar.js ***!
+  \*********************************************/
+/***/ (() => {
+
+(function () {
+  'use strict';
+
+  ecommvc.global.navbar = function () {
+    var toggleBtn = document.getElementById('menu-btn');
+    var navList = document.getElementById('nav-list');
+    var navBtnList = document.getElementById('nav-btn-list');
+    toggleBtn.addEventListener('click', function () {
+      navList.classList.toggle('active');
+      navBtnList.classList.toggle('active');
+    });
+  };
+})();
+
+/***/ }),
+
+/***/ "./resources/assets/js/init.js":
+/*!*************************************!*\
+  !*** ./resources/assets/js/init.js ***!
+  \*************************************/
+/***/ (() => {
+
+(function () {
+  'use strict'; // Get the value of data-page-id attribute
+
+  var bodyElement = document.querySelector("body");
+  var pageId = bodyElement.getAttribute("data-page-id"); // When DOM is leaded and ready then run the code inside
+  // equivalent of $(document).ready(function() {// code});
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    // Switch pages
+    switch (pageId) {
+      case 'global':
+        ecommvc.global.navbar();
+        break;
+
+      case 'home':
+        // ecommvc.front.navbar();
+        break;
+
+      default: // Do Nothing
+
+    }
   });
 })();
 
