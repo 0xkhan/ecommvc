@@ -13,6 +13,7 @@
         switch (pageId) {
             case 'global':
                 ecommvc.global.navbar();
+                ecommvc.global.dropdown();
                 break;
             case 'home':
                 // ecommvc.front.navbar();

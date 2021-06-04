@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+.footer {
+    background-color: $secondary;
+    padding: 1.5rem 0;
+}
+
+.footer hr {
+    margin: 1.5rem 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+hr {
+    width: 10%;
+    height: 1px;
+    border-radius: 3px;
+    border: 0;
+    border-top: .0625rem solid rgba(0,0,0,.1);
+}
+
+.footer .copyright {
+    font-size: .875rem;
+}
+
+.footer ul {
+    margin: 0;
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: flex-end;
+}

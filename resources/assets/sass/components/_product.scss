@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.product-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.product-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+}
