@@ -101,7 +101,7 @@ li {
     border-bottom: 1px solid $secondary;
 }
 
-@media all and (max-width: $breakpoint-md) {
+@media all and (max-width: $grid__bp-md) {
     .navbar {
         position: absolute;
         top: 0;
@@ -183,7 +183,7 @@ li {
 
 }
 
-@media all and (max-width: $breakpoint-sm) {
+@media all and (max-width: $grid__bp-sm) {
     .navbar {
         .nav-global {
             top: 1.2rem;

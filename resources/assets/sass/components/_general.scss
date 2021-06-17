@@ -80,20 +80,21 @@ a, a:hover {
     justify-content: space-between;
 }
 
-.mt-0, .my-0 { margin-top: 0; }
-.mb-0, .my-0 { margin-bottom: 0; }
-.mt-5, .my-5 { margin-top: 3rem }
-.mb-5, .my-5 { margin-bottom: 3rem }
-
-.ml-0, .mx-0 { margin-left: 0; }
-.mr-0, .mx-0 { margin-right: 0; }
-.ml-1, .mx-1 { margin-left: 0.375rem; }
-.mr-1, .mx-1 { margin-right: 0.375rem; }
-.ml-5, .mx-5 { margin-left: 3rem; }
-.mr-5, .mx-5 { margin-right: 3rem; }
-
+// Margins
 .ml-auto, .mx-auto { margin-left: auto; }
 .mr-auto, .mx-auto { margin-right: auto; }
+.mt-0, .my-0 { margin-top: 0; }
+.mr-0, .mx-0 { margin-right: 0; }
+.mb-0, .my-0 { margin-bottom: 0; }
+.ml-0, .mx-0 { margin-left: 0; }
+@include margins;
+
+// Paddings
+.pt-0, .py-0 { padding-top: 0; }
+.pr-0, .px-0 { padding-right: 0; }
+.pb-0, .py-0 { padding-bottom: 0; }
+.pl-0, .px-0 { padding-left: 0; }
+@include paddings;
 
 .text-center {
     text-align: center;
@@ -127,6 +128,7 @@ a, a:hover {
 .text-white { color: $white; }
 .text-dark { color: $gray-dark; }
 
+/*
 .col-md-1 { grid-column: span 1; }
 .col-md-2 { grid-column: span 2; }
 .col-md-3 { grid-column: span 3; }
@@ -152,7 +154,10 @@ a, a:hover {
 .col-lg-10 { grid-column: span 10; }
 .col-lg-11 { grid-column: span 11; }
 .col-lg-12 { grid-column: span 12; }
+*/
 
 #featured {
     margin-bottom: 4rem;
 }
+
+

@@ -1,0 +1,20 @@
+$base-space: 0;
+$spaces: .25rem, .5rem, 1rem, 1.5rem, 3rem;
+
+@mixin margins {
+    @for $i from 1 through length($spaces) {
+        .mt-#{$i}, .my-#{$i} { margin-top: nth($spaces, $i); }
+        .mr-#{$i}, .mx-#{$i} { margin-right: nth($spaces, $i); }
+        .mb-#{$i}, .my-#{$i} { margin-bottom: nth($spaces, $i); }
+        .ml-#{$i}, .mx-#{$i} { margin-left: nth($spaces, $i); }
+    }
+}
+
+@mixin paddings {
+    @for $i from 1 through length($spaces) {
+        .pt-#{$i}, .py-#{$i} { margin-top: nth($spaces, $i); }
+        .pr-#{$i}, .px-#{$i} { margin-right: nth($spaces, $i); }
+        .pb-#{$i}, .py-#{$i} { margin-bottom: nth($spaces, $i); }
+        .pl-#{$i}, .px-#{$i} { margin-left: nth($spaces, $i); }
+    }
+}

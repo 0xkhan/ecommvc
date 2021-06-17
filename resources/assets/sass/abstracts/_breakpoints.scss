@@ -1,10 +1,12 @@
-$breakpoint-xs: 0;
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
+$grid__bp-xs: 0;
+$grid__bp-sm: 576px;
+$grid__bp-md: 768px;
+$grid__bp-lg: 992px;
+$grid__bp-xl: 1200px;
+$grid__bp-xxl: 1400px;
 
-$max-page-width: 1200px;
+$big-page-width: $grid__bp-xl;
+$max-page-width: $grid__bp-xxl;
 $grid-columns: 12;
 $grid-gutter: 1.5em;
 $contained: 80%; // Limits width of contained content

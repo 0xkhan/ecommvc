@@ -200,6 +200,110 @@ require_once __DIR__ . '/../bootstrap/init.php';
                         </div>
                     </div>
                 </section>
+
+                <section id="related" class="skew-separator skew-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h2>You May Like These Too</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <div class="product-image">
+                                        <img src="https://cdn-s3.touchofmodern.com/products/001/879/282/a92cb759155e9b7b742eac0312773ac1_large.jpg?1592340997">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-category text-warning">Summer</h5>
+                                        <h4 class="title">This is the title</h4>
+                                        <div class="card-description">
+                                            <p>Dolce & Gabbana's 'Greta' tote has been crafted in Italy from
+                                                hard-wearing red textured-leather.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between card-footer">
+                                            <div class="price-container">
+                                                <span class="price">300 €</span>
+                                            </div>
+                                            <button class="btn btn-round btn-icon-only btn-sm btn-danger">
+                                                <i class="fa fa-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <div class="product-image">
+                                        <img src="https://cdn-s3.touchofmodern.com/products/001/879/282/a92cb759155e9b7b742eac0312773ac1_large.jpg?1592340997">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-category text-warning">Summer</h5>
+                                        <h4 class="title">This is the title</h4>
+                                        <div class="card-description">
+                                            <p>Dolce & Gabbana's 'Greta' tote has been crafted in Italy from
+                                                hard-wearing red textured-leather.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between card-footer">
+                                            <div class="price-container">
+                                                <span class="price">300 €</span>
+                                            </div>
+                                            <button class="btn btn-round btn-icon-only btn-sm btn-danger">
+                                                <i class="fa fa-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <div class="product-image">
+                                        <img src="https://cdn-s3.touchofmodern.com/products/001/879/282/a92cb759155e9b7b742eac0312773ac1_large.jpg?1592340997">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-category text-warning">Summer</h5>
+                                        <h4 class="title">This is the title</h4>
+                                        <div class="card-description">
+                                            <p>Dolce & Gabbana's 'Greta' tote has been crafted in Italy from
+                                                hard-wearing red textured-leather.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between card-footer">
+                                            <div class="price-container">
+                                                <span class="price">300 €</span>
+                                            </div>
+                                            <button class="btn btn-round btn-icon-only btn-sm btn-danger">
+                                                <i class="fa fa-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <div class="product-image">
+                                        <img src="https://cdn-s3.touchofmodern.com/products/001/879/282/a92cb759155e9b7b742eac0312773ac1_large.jpg?1592340997">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-category text-warning">Summer</h5>
+                                        <h4 class="title">This is the title</h4>
+                                        <div class="card-description">
+                                            <p>Dolce & Gabbana's 'Greta' tote has been crafted in Italy from
+                                                hard-wearing red textured-leather.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between card-footer">
+                                            <div class="price-container">
+                                                <span class="price">300 €</span>
+                                            </div>
+                                            <button class="btn btn-round btn-icon-only btn-sm btn-danger">
+                                                <i class="fa fa-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </main>
 
