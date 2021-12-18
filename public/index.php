@@ -1,6 +1,6 @@
 <?php
-
 require_once __DIR__ . '/../bootstrap/init.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
