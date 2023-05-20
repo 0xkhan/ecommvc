@@ -10,12 +10,20 @@
         "files": ["app/functions/helper.php"]
     },
     "require": {
+        "php": "^8.2",
         "vlucas/phpdotenv": "^5.3",
         "altorouter/altorouter": "^2.0",
         "jenssegers/blade": "^1.4",
-        "illuminate/database": "^8.76"
+        "illuminate/database": "^8.76",
+        "phpmailer/phpmailer": "^6.5"
+    },
+    "require-dev": {
+        "filp/whoops": "^2.14"
     },
     "config": {
+        "platform": {
+            "php": "8.2"
+        },
         "optimize-autoloader": true
     }
 }
