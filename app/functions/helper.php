@@ -1,6 +1,8 @@
 <?php
 
 use Jenssegers\Blade\Blade;
+use voku\helper\Paginator;
+use Illuminate\Database\Capsule\Manager as Capsule;
 
 /**
  * Responsible for getting views
@@ -54,4 +56,16 @@ function slug($value)
 
     // Remove whitespace
     return trim($value, '-');
+}
+
+function paginate($records, $total_records, $table, $object)
+{
+    $pages = new Paginator($records, 'p');
+    $pages->set_total($total_records);
+
+    $data = Capsule::select("SELECT * FROM $table ORDER BY created_at DESC " . $pages->get_limit());
+
+    $categories = $object->transform($data);
+
+    return [$categories, $pages->page_links()];
 }
