@@ -3,7 +3,8 @@
     'use strict';
 
     window.ecommvc = {
-        global: {}
+        global: {},
+        admin: {}
     }
 
 })();
