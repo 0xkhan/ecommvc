@@ -18,6 +18,8 @@
             case 'home':
                 // ecommvc.front.navbar();
                 break;
+            case 'adminCategories':
+                ecommvc.admin.update();
             default:
                 // Do Nothing
         }

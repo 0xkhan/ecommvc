@@ -2,6 +2,8 @@
 
 @section('title', 'Product Categories')
 
+@section('data-page-id', 'adminCategories')
+
 @section('content')
     <style>
         tr, td {
@@ -12,6 +14,8 @@
     <div class="category">
         <div class="container">
             <h2>Product Categories</h2>
+
+            @include('includes.message')
 
             <div class="row">
                 <div class="col-md-6">
@@ -40,13 +44,14 @@
                             <tbody>
                                 @foreach($categories as $category)
                                     <tr>
-                                        <td>{{ $category->name }}</td>
-                                        <td>{{ $category->slug }}</td>
-                                        <td>{{ $category->created_at->toFormattedDateString() }}</td>
+                                        <td>{{ $category['name'] }}</td>
+                                        <td>{{ $category['slug'] }}</td>
+                                        <td>{{ $category['added'] }}</td>
                                         <td width="100" class="text-right">
                                             <span data-tooltip tabindex="1" class="has-tip top" title="Add Subcategory">
-                                                <a style="padding-right:10px;" data-open="add-subcategory-{{ $category['id'] }}">&#10133;</a>
+                                                <a style="padding-right:10px;">&#10133;</a>
                                             </span>
+                                            <button type="button" data-modal-trigger="modal-{{ $category['id'] }}">Edit</button>
                                             <span data-tooltip tabindex="1" class="has-tip top" title="Edit Category">
                                                 <a style="padding-right:10px;" data-open="item-{{ $category['id'] }}">&#128221;</a>
                                             </span>
@@ -56,11 +61,37 @@
                                                     <button type="submit"><i class="delete">&#10060;</i></button>
                                                 </form>
                                             </span>
+                                            <div class="modal">
+                                                <div class="modal__container" data-modal-id="modal-{{ $category['id'] }}">
+                                                    <div class="modal__backdrop"></div>
+                                                    <div class="modal__content">
+                                                        <div class="modal__alerts">
+                                                        </div>
+                                                        <div class="modal__head">
+                                                            <h3 class="heading-light heading-3">Edit Category</h3>
+                                                        </div>
+                                                        <div class="modal__body">
+                                                            <form>
+                                                                <div class="input-group">
+                                                                    <input type="text" class="input-group-field" id="item-{{ $category['id'] }}" name="name" placeholder="Category Name" value="{{ $category['name'] }}">
+                                                                    <input type="submit" class="button update-category" name="token" data-token="{{ \App\Classes\CSRFToken::_token() }}" id="{{ $category['id'] }}" value="Update">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal__foot">
+                                                            <a class="btn btn--default" href="#" data-modal-close="modal-{{ $category['id'] }}">Close</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                 @endforeach
                             </tbody>
                         </table>
+
+                        {!! $links !!}
+
                     @else
                         <h3>You have not created any categories!</h3>
                     @endif
@@ -68,5 +99,7 @@
             </div>
         </div>
     </div>
+
+    @include('includes.delete-modal')
 
 @endsection

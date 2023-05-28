@@ -10,7 +10,7 @@
         <!-- CSS -->
         <link rel="stylesheet" type='text/css' media='all' href="/css/main.css?v=<?php echo microtime(); ?>">
     </head>
-    <body>
+    <body data-page-id="@yield('data-page-id')">
         @include('includes.admin-sidebar')
 
         <div class="off-canvas-content" data-off-canvas-content>
